@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Converter</title>
+  <link rel="stylesheet" href="converter.css" />
+</head>
+<body>
+  <div class="converter-container">
+    <h1>Smart Converter</h1>
+
+    <div class="section">
+      <label for="type">Choose Conversion Type</label>
+      <select id="type">
+        <option value="length">Length</option>
+        <option value="volume">Volume</option>
+        <option value="temperature">Temperature</option>
+        <option value="currency">Currency</option>
+      </select>
+    </div>
+
+    <div class="section dual">
+      <input type="number" id="inputValue" placeholder="Enter value..." />
+      <div class="unit-selects">
+        <select id="fromUnit"></select>
+        <button id="swapBtn" title="Swap Units">⇄</button>
+        <select id="toUnit"></select>
+      </div>
+    </div>
+
+    <button id="convertBtn">Convert</button>
+
+    <div class="result">
+      <h2 id="resultText">Result: —</h2>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

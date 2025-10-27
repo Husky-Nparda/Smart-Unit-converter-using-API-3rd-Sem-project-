@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.converter-container {
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.4);
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  padding: 40px;
+  width: 420px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  animation: fadeIn 1s ease;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.section {
+  margin: 15px 0;
+}
+
+.unit-selects {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+select, input {
+  padding: 10px;
+  margin: 8px;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  width: 45%;
+  background: rgba(255, 255, 255, 0.8);
+  color: #333;
+  text-align: center;
+}
+
+button {
+  background: linear-gradient(45deg, #ff6ec4, #7873f5);
+  border: none;
+  padding: 12px 25px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: transform 0.2s ease, background 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+#swapBtn {
+  width: 40px;
+  font-size: 20px;
+  border-radius: 50%;
+  padding: 8px;
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+.result {
+  margin-top: 25px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+}
+
+footer {
+  margin-top: 20px;
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+footer a {
+  color: #ffb6ff;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
